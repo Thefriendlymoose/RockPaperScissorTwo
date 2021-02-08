@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+.rock-1{
+    width: 100px;
+    height: 100px;
+}
+
+.paper-1{
+    width: 100px;
+    height: 100px;
+}
+
+.scissor-1{
+    width: 100px;
+    height: 100px;
+}
+
+.line{
+    border-bottom:2px solid bisque;
+    display: block;
+}
