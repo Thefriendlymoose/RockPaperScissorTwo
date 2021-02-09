@@ -4,26 +4,178 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Source Code Pro', monospace;
+    background-color: #C1C8CD;
+    height: 100vh;
+}
+
 .hide {
     display: none;
 }
 
-.rock-1{
+#main-container{
+    width: 720px;
+    height:100%;
+    margin: 0 auto;
+    
+}
+
+#header-container{
+    height: 100px;
+    display: flex;
+}
+
+#head-title{
+    margin: auto auto;
+    font-size: 48px;
+}
+
+#round-container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+
+}
+
+#intro-container{
+    padding-bottom: 20px;
+}
+
+.round-button{
+    height: 36px;
+    width: 130px;
+    border-radius: 4px;
+    background-color: #FF3F3F;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.round-button:hover{
+    border: rgb(0, 0, 0) solid 1px;
+}
+
+.round-button:focus{
+    outline: none;
+    background-color: #fd6464;
+    border: rgb(0, 0, 0) solid 1px;
+    box-shadow: 0px 0px 2px 0px #000000, 1px 1px 5px 0px #BC4F2D;
+}
+
+.round-button-selected{
+
+}
+
+.round-button-not-selected{
+
+}
+
+#main-content-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-content-container div h2{
+    padding: 10px 0 20px 0;
+}
+
+#weapon-container{
+    height: 100%;
+    padding: 20px 40px 40px 40px;
+}
+
+.rock-1, .paper-1, .scissor-1{
     width: 100px;
     height: 100px;
 }
 
-.paper-1{
-    width: 100px;
-    height: 100px;
+.rock-1, .paper-1, .scissor-1{
+    cursor: pointer;
 }
 
-.scissor-1{
-    width: 100px;
-    height: 100px;
+.rock-1:hover, .paper-1:hover, .scissor-1:hover{
+    fill:rgb(245, 63, 63);
+    filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, .7));
 }
 
+.weapon-clicked{
+    fill:indianred;
+}
+
+#score-container{
+    display:flex;
+    justify-content: center;
+}
+
+#user-score-container, #computer-score-container{
+    margin: 10px 40px;
+}
+
+#user-score-container h4, #computer-score-container h4{
+    text-align: center;
+    font-size: 24px;
+}
+
+#round-history-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#round-history-container h2{
+    padding: 10px;
+}
+
+.line-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
 .line{
-    border-bottom:2px solid bisque;
+    border-bottom:2px solid black;
     display: block;
+    width: 90%;   
+}
+
+#history-container{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.icon-round-container{
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#comp-icon-container{
+    margin-left: 10px;
+}
+
+#round-count-container{
+    font-size: 37px;
+}
+
+.rock-2, .paper-2, .scissor-2{
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.lost-fill{
+    fill: rgb(182, 0, 0);
+}
+
+.won-fill{
+    fill: #118f00;
 }
