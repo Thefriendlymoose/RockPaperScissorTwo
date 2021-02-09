@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Rock Paper Scissor</title>
 </head>
 <body>
 <!--Rock Template-->
@@ -31,8 +31,8 @@
                 <p>Please choose game mode below to start the game</p>
             </div>
             <div id="round-button-container">
-                <button class="round-button" id="first-3">First to 3</button>
-                <button class="round-button" id="first-5">First to 5</button>
+                <button class="round-button" id="first-3" value=3>First to 3</button>
+                <button class="round-button" id="first-5" value=5>First to 5</button>
             </div>
         </div>
         <section id="main-content-container">
@@ -40,15 +40,15 @@
                 <h2>Please pick your weapon</h2>
             </div>
             <div id="weapon-container">
-                <svg viewBox="0 0 66 68" class="rock-1">
+                <svg viewBox="0 0 66 68" class="weapon-1" id="rock" values="1">
                     <use xlink:href="#rock-tmp">
                 </svg>
             
-                <svg viewBox="0 0 80 90" class="paper-1">
+                <svg viewBox="0 0 80 90" class="weapon-1" id="paper">
                     <use xlink:href="#paper-tmp">
                 </svg>
             
-                <svg viewBox="-10 -75 90 64" class="scissor-1">
+                <svg viewBox="-10 -75 90 64" class="weapon-1" id="scissor">
                     <use xlink:href="#scissor-tmp">
                 </svg>
             </div>
@@ -57,13 +57,19 @@
             <div id="user-score-container">
                 <h3>Your Score</h3>
                 <div id="user-score-counter">
-                    <h4>00</h4>
+                    <h4 id="user-score">0</h4>
+                </div>
+            </div>
+            <div id="current-round-container">
+                <h3>Round</h3>
+                <div id="round-counter-container">
+                    <h4 id="round-counter">0</h4>
                 </div>
             </div>
             <div id="computer-score-container">
                 <h3>Computer Score</h3>
                 <div id="user-score-counter">
-                    <h4>00</h4>
+                    <h4 id="comp-score">0</h4>
                 </div>
             </div>
         </div>
@@ -85,13 +91,13 @@
                 <div id="round-history">
                     <h3 class="history-title">Round</h3>
                     <div id="round-count-container" class="icon-round-container">
-                        <p>1</p><p>1</p>
+                        <p>01</p><p>02</p>
                     </div>
                 </div>
                 <div id="computer-history">
                     <h3 class="history-title">Computer</h3>
                     <div id="comp-icon-container" class="icon-round-container">
-                        <svg viewBox="-10 -75 90 64" class="scissor-2">
+                        <svg viewBox="-10 -75 90 64" class="scissor-2 won-fill">
                             <use xlink:href="#scissor-tmp">
                         </svg>
                         <svg viewBox="-10 -75 90 64" class="scissor-2">
@@ -101,6 +107,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    <script src="scripts/script.js"></script>    
 </body>
 </html>
