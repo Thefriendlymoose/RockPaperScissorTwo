@@ -31,7 +31,7 @@ body{
 }
 
 #round-container{
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -40,6 +40,13 @@ body{
 
 #intro-container{
     padding-bottom: 20px;
+}
+
+.game-end-banner{
+    text-align: center;
+    color: #FF3F3F;
+    background-color: black;
+    padding: 10px;
 }
 
 .round-button{
@@ -162,13 +169,20 @@ body{
 }
 
 #round-count-container{
-    font-size: 37px;
+    font-size: 35px;
 }
 
 .rock-2, .paper-2, .scissor-2{
     width: 35px;
     height: 35px;
     margin-top: 10px;
+}
+
+.round-counter{
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align:center;
 }
 
 .lost-fill{
